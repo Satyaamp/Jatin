@@ -1856,3 +1856,94 @@ footer::before {
 .delay-600 {
     transition-delay: 600ms;
 }
+
+/* ==========================================
+   MOBILE & TABLET REDESIGN OVERRIDES
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* Founder & CEO sections responsiveness */
+    #about-founder, 
+    #about-ceo {
+        padding: 50px 0 !important;
+    }
+
+    #about-founder .about-title, 
+    #about-ceo .about-title {
+        font-size: 2rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    #about-founder .about-wrapper, 
+    #about-ceo .about-wrapper {
+        gap: 20px !important;
+    }
+
+    #about-founder .owner-card, 
+    #about-ceo .owner-card {
+        max-width: 100% !important;
+        margin: 0 auto;
+        padding: 20px !important;
+    }
+
+    /* Target the tall image container wrapper div in owner-card */
+    #about-founder .owner-card div[style*="height: 500px"],
+    #about-ceo .owner-card div[style*="height: 500px"] {
+        height: 320px !important;
+    }
+
+    /* Make sure text doesn't overflow or look too large */
+    #about-founder .quote-text, 
+    #about-ceo .quote-text {
+        font-size: 1.25rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    #about-founder button,
+    #about-ceo button {
+        padding: 12px 30px !important;
+        font-size: 14px !important;
+    }
+
+    /* Big company banner responsiveness */
+    .company-logo-banner {
+        max-height: 320px !important;
+        max-width: 95% !important;
+    }
+    .company-banner {
+        min-height: 280px !important;
+        padding: 50px 15px !important;
+    }
+
+    /* Responsive overrides for business.html profiles and cards */
+    .business-hero {
+        height: 40vh !important;
+    }
+    
+    .business-hero h1 {
+        font-size: 2rem !important;
+    }
+    
+    .content-section {
+        padding: 50px 0 !important;
+    }
+    
+    .content-section h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .content-section p {
+        font-size: 1rem !important;
+        line-height: 1.7 !important;
+        padding: 0 15px !important;
+    }
+    
+    .value-card {
+        padding: 1.5rem !important;
+    }
+    
+    .value-card h3 {
+        font-size: 1.3rem !important;
+    }
+}
