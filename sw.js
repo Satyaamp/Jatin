@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lgt-v1';
+const CACHE_NAME = 'lgt-v2';
 const ASSETS = [
   './',
   './index.html',
